@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/* * Estilos específicos del componente Landing Page.
+ * La mayoría del diseño se gestiona con clases de Tailwind
+ * directamente en el archivo .ts (template).
+ */
+:host {
+  display: block;
+  background-color: #111827; /* bg-gray-900 */
+}
+
+/* Scroll suave para los enlaces ancla */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo para simular el borde del demo en las secciones */
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #22D3EE; /* text-cyan-400 */
+  margin: 16px auto 0;
+}
