@@ -109,62 +109,146 @@
     <div class="container">
       <h2 class="text-4xl fw-bold text-center mb-4 text-white">Planes y Costos</h2>
       <p class="text-center text-light-emphasis mb-5 col-lg-6 mx-auto">
-        Costos estándar para nuestros servicios. Los planes de Box y Hawaiano son independientes.
+        Nuestros servicios son independientes. Elige una disciplina para ver sus costos.
       </p>
-      <div class="row g-4 text-center align-items-center">
 
-        <!-- Plan 1 -->
-        <div class="col-lg-4">
-          <div class="card shadow h-100 border-info">
-            <div class="card-header border-0 py-3">
-              <h3 class="fs-4 fw-bold mb-0">Semanal</h3>
+      <!-- Pestañas de Navegación (Tabs) -->
+      <ul class="nav nav-tabs nav-pills justify-content-center border-0 mb-4" id="planesTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active fs-5 fw-medium mx-2" id="box-tab" data-bs-toggle="tab"
+            data-bs-target="#box-content" type="button" role="tab" aria-controls="box-content" aria-selected="true">
+            🥊 Boxeo Fitness
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5 fw-medium mx-2" id="hawaiano-tab" data-bs-toggle="tab"
+            data-bs-target="#hawaiano-content" type="button" role="tab" aria-controls="hawaiano-content"
+            aria-selected="false">
+            🌺 Danza Hawaiana
+          </button>
+        </li>
+      </ul>
+
+      <!-- Contenido de las Pestañas -->
+      <div class="tab-content" id="planesTabContent">
+
+        <!-- Contenido Tab Box -->
+        <div class="tab-pane fade show active" id="box-content" role="tabpanel" aria-labelledby="box-tab">
+          <div class="row g-4 text-center align-items-center justify-content-center mt-4">
+
+            <!-- Plan 1 (Box) -->
+            <div class="col-lg-4">
+              <div class="card shadow h-100 border-primary">
+                <div class="card-header border-0 py-3">
+                  <h3 class="fs-4 fw-bold mb-0">Semanal</h3>
+                </div>
+                <div class="card-body p-4">
+                  <p class="display-4 fw-bolder text-primary mb-3">$150</p>
+                  <ul class="list-unstyled space-y-2 text-light-emphasis">
+                    <li>Acceso Box por 7 días</li>
+                    <li>Ideal para probar</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="card-body p-4">
-              <p class="display-4 fw-bolder text-info mb-3">$150</p>
-              <ul class="list-unstyled space-y-2 text-light-emphasis">
-                <li>Acceso por 7 días</li>
-                <li>Ideal para probar</li>
-              </ul>
+
+            <!-- Plan 2 (Box - Destacado) -->
+            <div class="col-lg-4">
+              <div class="card shadow-lg h-100 border-primary plan-destacado">
+                <div class="card-header bg-primary text-white border-0 py-3">
+                  <span class="badge bg-light text-primary rounded-pill mb-2">Más Popular</span>
+                  <h3 class="fs-4 fw-bold mb-0 text-white">Mensual</h3>
+                </div>
+                <div class="card-body p-4">
+                  <p class="display-4 fw-bolder text-primary mb-3">$500</p>
+                  <ul class="list-unstyled space-y-2 text-light-emphasis">
+                    <li>Acceso Box por 30 días</li>
+                    <li>El mejor valor</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
+            <!-- Plan 3 (Box) -->
+            <div class="col-lg-4">
+              <div class="card shadow h-100 border-primary">
+                <div class="card-header border-0 py-3">
+                  <h3 class="fs-4 fw-bold mb-0">Anual</h3>
+                </div>
+                <div class="card-body p-4">
+                  <p class="display-4 fw-bolder text-primary mb-3">$5,000</p>
+                  <ul class="list-unstyled space-y-2 text-light-emphasis">
+                    <li>Acceso Box por 365 días</li>
+                    <li>Paga 10, obtén 12</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Plan 2 (Destacado) -->
-        <div class="col-lg-4">
-          <div class="card shadow-lg h-100 border-primary plan-destacado">
-            <div class="card-header bg-primary text-white border-0 py-3">
-              <span class="badge bg-light text-primary rounded-pill mb-2">Más Popular</span>
-              <h3 class="fs-4 fw-bold mb-0 text-white">Mensual</h3>
-            </div>
-            <div class="card-body p-4">
-              <p class="display-4 fw-bolder text-primary mb-3">$500</p>
-              <ul class="list-unstyled space-y-2 text-light-emphasis">
-                <li>Acceso por 30 días</li>
-                <li>El mejor valor</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <!-- Contenido Tab Hawaiano -->
+        <div class="tab-pane fade" id="hawaiano-content" role="tabpanel" aria-labelledby="hawaiano-tab">
+          <div class="row g-4 text-center align-items-center justify-content-center mt-4">
 
-        <!-- Plan 3 -->
-        <div class="col-lg-4">
-          <div class="card shadow h-100 border-info">
-            <div class="card-header border-0 py-3">
-              <h3 class="fs-4 fw-bold mb-0">Anual</h3>
+            <!-- Plan 1 (Hawaiano) -->
+            <div class="col-lg-4">
+              <div class="card shadow h-100 border-info">
+                <div class="card-header border-0 py-3">
+                  <h3 class="fs-4 fw-bold mb-0">Semanal</h3>
+                </div>
+                <div class="card-body p-4">
+                  <p class="display-4 fw-bolder text-info mb-3">$160</p>
+                  <ul class="list-unstyled space-y-2 text-light-emphasis">
+                    <li>Acceso Hawaiano 7 días</li>
+                    <li>Ideal para probar</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="card-body p-4">
-              <p class="display-4 fw-bolder text-info mb-3">$5,000</p>
-              <ul class="list-unstyled space-y-2 text-light-emphasis">
-                <li>Acceso por 365 días</li>
-                <li>Paga 10, obtén 12</li>
-              </ul>
+
+            <!-- Plan 2 (Hawaiano - Destacado) -->
+            <div class="col-lg-4">
+              <div class="card shadow-lg h-100 border-info plan-destacado">
+                <div class="card-header bg-info text-dark border-0 py-3">
+                  <span class="badge bg-light text-info rounded-pill mb-2">Más Popular</span>
+                  <h3 class="fs-4 fw-bold mb-0 text-dark">Mensual</h3>
+                </div>
+                <div class="card-body p-4">
+                  <p class="display-4 fw-bolder text-info mb-3">$550</p>
+                  <ul class="list-unstyled space-y-2 text-light-emphasis">
+                    <li>Acceso Hawaiano 30 días</li>
+                    <li>El mejor valor</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+
+            <!-- Plan 3 (Hawaiano) -->
+            <div class="col-lg-4">
+              <div class="card shadow h-100 border-info">
+                <div class="card-header border-0 py-3">
+                  <h3 class="fs-4 fw-bold mb-0">Anual</h3>
+                </div>
+                <div class="card-body p-4">
+                  <p class="display-4 fw-bolder text-info mb-3">$5,500</p>
+                  <ul class="list-unstyled space-y-2 text-light-emphasis">
+                    <li>Acceso Hawaiano 365 días</li>
+                    <li>Paga 10, obtén 12</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
       </div>
+
       <div class="text-center mt-5">
-        <p class="fs-4 fw-semibold text-white">Inscripción Única: $200</p>
+        <p class="fs-4 fw-semibold text-white">Inscripción Única (válida para ambos): $200</p>
+        <p class="text-light-emphasis">La inscripción se paga una sola vez al registrarte.</p>
       </div>
     </div>
   </section>
@@ -172,7 +256,58 @@
   <!-- Sección Horarios -->
   <section id="horarios" class="py-5 bg-black">
     <div class="container">
-      <h2 class="text-4xl fw-bold text-center mb-5 text-white">Horarios</h2>
+      <h2 class="text-4xl fw-bold text-center mb-5 text-white">Horarios BOX</h2>
+      <div class="table-responsive shadow-lg rounded-3">
+        <table class="table table-dark table-striped table-hover align-middle text-center mb-0">
+          <thead class="text-light-emphasis text-uppercase small">
+            <tr>
+              <th class="p-3" scope="col">Hora</th>
+              <th class="p-3" scope="col">Lunes</th>
+              <th class="p-3" scope="col">Martes</th>
+              <th class="p-3" scope="col">Miércoles</th>
+              <th class="p-3" scope="col">Jueves</th>
+              <th class="p-3" scope="col">Viernes</th>
+              <th class="p-3" scope="col">Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3 fw-medium">08:00 - 09:00</td>
+              <td class="p-3 text-primary">Box Fitness</td>
+              <td class="p-3 text-info">Danza Hawaiana</td>
+              <td class="p-3 text-primary">Box Fitness</td>
+              <td class="p-3 text-info">Danza Hawaiana</td>
+              <td class="p-3 text-primary">Box Fitness</td>
+              <td class="p-3 text-muted">Libre</td>
+            </tr>
+            <tr>
+              <td class="p-3 fw-medium">17:00 - 18:00</td>
+              <td class="p-3 text-info">Danza Hawaiana</td>
+              <td class="p-3 text-primary">Box Fitness</td>
+              <td class="p-3 text-info">Danza Hawaiana</td>
+              <td class="p-3 text-primary">Box Fitness</td>
+              <td class="p-3 text-info">Danza Hawaiana</td>
+              <td class="p-3 text-primary">Box (Sparring)</td>
+            </tr>
+            <tr>
+              <td class="p-3 fw-medium">19:00 - 20:00</td>
+              <td class="p-3 text-primary">Box Fitness</td>
+              <td class="p-3 text-muted">Cerrado</td>
+              <td class="p-3 text-primary">Box Fitness</td>
+              <td class="p-3 text-muted">Cerrado</td>
+              <td class="p-3 text-primary">Box Fitness</td>
+              <td class="p-3 text-muted">Cerrado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Horarios -->
+  <section id="horarios" class="py-5 bg-black">
+    <div class="container">
+      <h2 class="text-4xl fw-bold text-center mb-5 text-white">Horarios Hawaiano</h2>
       <div class="table-responsive shadow-lg rounded-3">
         <table class="table table-dark table-striped table-hover align-middle text-center mb-0">
           <thead class="text-light-emphasis text-uppercase small">
